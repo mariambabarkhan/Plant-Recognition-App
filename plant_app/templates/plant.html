@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Recognition & Disease Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'plant.css') }}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 style="color: #DEFFC6"><span style="color:#C2FF41">Plant </span>Recognition & Disease Detector</h1>
+        <p>Upload an Image of a plant and get immediate results</p>
+      </header>
+
+      <div id="resnetOutput"></div>
+
+      <div class="upload-area" id="uploadArea">
+        <img id="uploadedImage" class="hidden-image" />
+        <div class="upload-instruction">
+          <p>Drag and Drop Files <span style="color:#DEFFC6"><b>HERE</b></span></p>
+          <p>- OR -</p>
+        </div>
+        <div class ='prediction' id="prediction"></div>
+        <button id="browse-files">BROWSE FILES</button>
+      </div>
+
+      <button id="resnet">ResNet-50 Classifier</button>
+
+      <input type="file" id="fileElem" multiple style="display: none;" />
+      
+      <script src="{{ url_for('static', filename = 'plant.js') }}"></script>
+    </div>
+  </body>
+</html>

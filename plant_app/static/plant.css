@@ -1,0 +1,164 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('plant\ 2.png'), url('plant\ 3.png'), url('plant\ 1.png');
+    background-size: auto 100%, auto 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left, right, left top;
+    color: white;
+}
+
+.container {
+    height: 100%;
+    top: -2.5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: -0.1em;
+    width: 712px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    line-height: normal;
+}
+
+header p {
+    margin-bottom: 1em;
+    color: #DEFFC6;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.upload-area {
+    border: 2px dashed #C2FF41;
+    padding: 30px;
+    margin-bottom: 0.5em;
+    width: 14.46081rem;
+    height: 12.625rem;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.upload-instruction {
+    margin-top: -10%;
+    display: block;
+    position: relative;
+    color: #C2FF41;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: -0.5em;
+}
+
+#browse-files {
+    background-color: #648C4B;
+    color: white;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+
+.hidden-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    position: relative;
+    background-size: cover;
+}
+
+.upload-area p {
+    color: #C2FF41;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    height: 51.876px;
+}
+
+button {
+    padding: 15px 20px;
+    margin: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #2d461e;
+    box-shadow: 2px 2px #DEFFC6;
+}
+
+button:active {
+    box-shadow: 0px 5px #e1ffa2;
+    transform: translateY(4px);
+}
+
+#fileElem {
+    display: none;
+}
+
+#browse-files:hover,
+#yolo:hover,
+#resnet:hover {
+    background-color: #2d461e;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute space between the buttons */
+    align-items: center;
+    /* Align items vertically */
+    gap: 20px;
+    /* Change this value to increase/decrease space */
+}
+
+
+/* #yolo {
+    background-color: #545515;
+    font-family: Montserrat;
+} */
+
+#resnet {
+    background-color: #075a0e;
+    font-family: Montserrat;
+    flex: 0 1 auto;
+    min-width: 100px;
+}
+
+.prediction {
+    font-size: 18px;
+    color: #ddffdf;
+    position: absolute;
+    top: 50%;
+    bottom: 90%;
+    left: 50%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+}
