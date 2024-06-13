@@ -67,7 +67,7 @@ except Exception as e:
 
 @app.route('/')
 def index():
-    return render_template('plant.html')
+    return render_template('index.html')
 
 @app.route('/resnet_predict', methods=['POST'])
 def resnet_predict():
